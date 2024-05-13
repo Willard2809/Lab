@@ -1,0 +1,135 @@
+print()
+print()
+print("Semana No. 10: Ejercicio 1")
+print()
+mes=int(input("Ingrese el número del mes: "))
+ 
+if mes>12 or mes<1:
+    print("Error: El número a ingresar debe estar contenido entre 1 y 12")
+else: 
+    if mes==1:
+        print("MES: Enero")
+    elif mes==2:
+        print("MES: Febrero")
+    elif mes==3:
+        print("MES: Marzo")
+    elif mes==4:
+        print("MES: Abril")
+    elif mes==5:
+        print("MES: Mayo")
+    elif mes==6:
+        print("MES: Junio")
+    elif mes==7:
+        print("MES: Julio")
+    elif mes==8:
+        print("MES: Agosto")
+    elif mes==9:
+        print("MES: Septiembre")
+    elif mes==10:
+        print("MES: Octubre")
+    elif mes==11:
+        print("MES: Noviembre")
+    else: 
+        print("MES: Diciembre")
+
+#Validando con case
+match(mes):
+    case 1:
+         print("MES: Enero")
+    case 2:
+        print("MES: Febrero")
+    case 3:
+        print("MES: Marzp")
+    case 4:
+        print("MES: Abril")
+    case 5:
+        print("MES: Mayo")
+    case 6:
+        print("MES: Junio")
+    case 7:
+        print("MES: Julio")
+    case 8:
+        print("MES: Agosto")
+    case 9:
+        print("MES: Septiembre")
+    case 10:
+        print("MES: Octubre")
+    case 11:
+        print("MES: Noviembre")
+    case 12:
+        print("MES: Diciembre")
+
+
+
+print()
+print()
+print("Semana No. 10: Ejercicio 2")
+A=int(input("Ingrese un número mayor a cero (A): "))
+B=int(input("Ingrese un segundo número mayor a cero (B): "))
+C=int(input("Ingrese un tercer número mayor a cero (C): "))
+
+if A<0 and B<0 and C<0:
+    print("Número inválido")
+else: 
+    if A>B:
+        if A>C:
+            print("A es mayor a C y B")
+        else: 
+            if A==C:
+                print("A y C son mayores a B")
+            else:
+                print("C es mayor a A y B")
+    else:
+        if A==B:
+            if A>C:
+                print("A y B son mayores a C")
+            else:
+                if A==C:
+                    print("A, B y C son iguales")
+                else: 
+                    print ("C es mayor a A y B")
+        else:
+            if B>C:
+                print("B es mayor a A y C")
+            else: 
+                if B==C:
+                    print("B y C son mayores a A")
+                else: 
+                    print("C es mayor a A y B")
+
+
+print()
+print()
+print("Semana No. 10: Ejercicio 3")
+dia=int(input("Ingrese el día de su nacimiento: "))
+mes=int(input("Ingrese el mes de su nacimiento (1-12): "))
+año=int(input("Ingrese el año en que nació: "))
+
+if (mes == 3 and dia >= 21) or (mes == 4 and dia <= 20):
+    signo = "Aries"
+elif (mes == 4 and dia >= 21) or (mes == 5 and dia <= 21):
+    signo = "Tauro"
+elif (mes == 5 and dia >= 22) or (mes == 6 and dia <= 21):
+    signo = "Géminis"
+elif (mes == 6 and dia >= 22) or (mes == 7 and dia <= 22):
+    signo = "Cáncer"
+elif (mes == 7 and dia >= 23) or (mes == 8 and dia <= 23):
+    signo = "Leo"
+elif (mes == 8 and dia >= 24) or (mes == 9 and dia <= 23):
+    signo = "Virgo"
+elif (mes == 9 and dia >= 24) or (mes == 10 and dia <= 23):
+    signo = "Libra"
+elif (mes == 10 and dia >= 24) or (mes == 11 and dia <= 22):
+    signo = "Escorpio"
+elif (mes == 11 and dia >= 23) or (mes == 12 and dia <= 21):
+    signo = "Sagitario"
+elif (mes == 12 and dia >= 22) or (mes == 1 and dia <= 20):
+    signo = "Capricornio"
+elif (mes == 1 and dia >= 21) or (mes == 2 and dia <= 19):
+    signo = "Acuario"
+elif (mes == 2 and dia >= 20) or (mes == 3 and dia <= 20):
+    signo = "Piscis"
+else:
+    signo = "Fecha de nacimiento inválida"
+
+print("Tu signo zodiacal es: ", signo)
